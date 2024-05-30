@@ -1,0 +1,241 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.5s ease all;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-image: url('https://wallup.net/wp-content/uploads/2017/11/17/301412-Pokemon.jpg');
+}
+
+.container {
+    width: 90vw;
+    margin: 20px auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/7c1cfff2-db8d-44cd-8a13-cb2a4162fae6/dd2zouo-047f7b3f-b895-43ac-82a4-abb6ca12c52a.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzdjMWNmZmYyLWRiOGQtNDRjZC04YTEzLWNiMmE0MTYyZmFlNlwvZGQyem91by0wNDdmN2IzZi1iODk1LTQzYWMtODJhNC1hYmI2Y2ExMmM1MmEucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.EFI6YQ0acRLpYHzupMAxV_N4KMcpNWT-_3RJ4TV-4eU);
+    background-size: cover;
+    background-position: center;
+}
+
+.box img {
+    width: 100%;
+}
+
+.box {
+    width: 256px;
+    padding: 20px;
+    color: white;
+    font-size: 4rem;
+    text-shadow: 3px 3px 3px black;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+
+.pokeball {
+    display: none;
+}
+
+.pokeball {
+    width: 32px;
+}
+
+.pokeball img {
+    width: 100%;
+}
+
+.box .name {
+    display: none;
+    
+}
+
+.box .type1, .box .type2{
+    display: none;
+    text-align: center;
+    font-size: 1.5rem;
+    width: 100%;
+    color: white;
+    text-shadow: 2px 2px 3px black;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.charmander {
+    background-color: #fbfbfb;
+}
+
+.venonat {
+    background-color:#9141CB
+}
+
+.zubat {
+    background-color:#A962E8
+}
+.dratini{
+    background-color:skyblue;
+}
+
+.pikachu {
+    background-color: #FFF800;
+}
+
+.bullbasaur {
+    background-color: #47C67B;
+}
+
+.squirtle {
+    background-color:#2980EF
+}
+
+.caterpie {
+    background-color:#3FA129
+}
+
+
+.mankey{
+    background-color: #C4833D;
+}
+
+
+.meowth {
+    background-color: #EAE4C5;
+}
+
+.pidgey {
+    background-color: #E29C37;
+}
+
+.bellsprout {
+    background-color: #FFD400;
+}
+
+.rattata {
+    background-color: #A962E8;
+}
+
+.snorlax {
+    background-color: #0D5C9E;
+}
+
+.grass{
+    background-color: #3FA129;
+}
+
+.poison{
+    background-color: #9500ff;
+}
+
+.bug{
+    background-color: #91A119;
+}
+
+.fire{
+    background-color: #E52829;
+}
+
+.dragon{
+    background-color: #5060E1;
+}
+
+.poison{
+    background-color: #9FA19F;
+}
+
+.fighting{
+    background-color: #FF8001;
+}
+
+.flying{
+    background-color: #81B9EF;
+}
+
+.electric{
+    background-color: #FAC001;
+
+}
+
+.water{
+    background-color:#81B9EF
+}
+
+.electric{
+    background-color: #2980EF;
+}
+
+@media (max-width: 950px) {
+    .container {
+        flex-direction: column;
+        background-position: left top;
+    }
+
+    .box {
+        width: 100%;
+        padding: 20px 20px;
+    }
+
+    .box img {
+        width: 128px;
+    }
+
+    .box .name {
+        display: block;
+    }
+
+    .type1, .type2{
+        display: none;
+    }
+
+    .box .pokeball {
+        display: contents;
+    }
+
+    .pokeball img {
+        width: 64px;
+    }
+
+    .box .name {
+        font-size: 3rem;
+    }
+
+    .box:hover {
+
+        background-image: url('https://th.bing.com/th/id/OIP.HDhqar_WglGlrsrKWDFmpwHaDS?w=1800&h=800&rs=1&pid=ImgDetMain');
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+@media (max-width: 700px) {
+    .pokeball img {
+        display: none;
+    }
+
+    .box {
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .box img {
+        width: 256px;
+    }
+
+    .box .name {
+        font-size: 2.5rem;
+    }
+    }
+    .box:hover {
+        background-image: url('https://th.bing.com/th/id/OIP.HDhqar_WglGlrsrKWDFmpwHaDS?w=1800&h=800&rs=1&pid=ImgDetMain');
+       
+    }
+    
